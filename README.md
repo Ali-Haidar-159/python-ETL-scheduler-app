@@ -45,6 +45,7 @@ Then edit `.env.local` and set the values you need. Example:
 ```
 API_URL=https://jsonplaceholder.typicode.com/photos
 DB_URL=postgresql://admin:admin@localhost:5432/apidb
+MAIL_APP_PASS= <google app password>
 ```
 
 4. Export environment variables (Linux/macOS)
