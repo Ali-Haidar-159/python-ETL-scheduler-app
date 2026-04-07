@@ -1,5 +1,9 @@
+from datetime import datetime
+
 from db.db_connection import Session
 from db.models import Photos
+from service.email import send_email
+
 
 def sync_data(records):
     session = Session()
@@ -27,6 +31,11 @@ def sync_data(records):
                 inserted += 1
 
         session.commit()
+        
+        now = datetime.now()
+        email_body = f"Sync done -> Inserted: {inserted}, Updated: {updated} -- time : {now}"
+        send_email(email_body)
+
         print(f"Sync done -> Inserted: {inserted}, Updated: {updated}")
 
     except Exception as e:
