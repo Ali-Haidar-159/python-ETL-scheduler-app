@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-sender_email = "abc@gmail.com"
-receiver_email = "xxz@gmail.com"
+sender_email = "alihaidar379227@gmail.com"
+receiver_email = "stylessboy0123@gmail.com"
 
 app_pass = os.getenv("MAIL_APP_PASS")
 
