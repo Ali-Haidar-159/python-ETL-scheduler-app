@@ -57,8 +57,6 @@ cp .env .env.local
 
 Then update `.env.local` with the values you need.
 
-## Environment variables
-
 Required
 - `DB_USER` - Postgres user
 - `DB_PASSWORD` - Postgres password
